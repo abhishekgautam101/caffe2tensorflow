@@ -8,3 +8,6 @@
 # Python cache
 *.pyc
 
+PoseEstimationModel/
+
+env27/

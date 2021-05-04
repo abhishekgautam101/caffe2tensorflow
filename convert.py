@@ -44,7 +44,11 @@ def convert(def_path, caffemodel_path, data_output_path, code_output_path, stand
         if standalone_output_path:
             filename, _ = os.path.splitext(os.path.basename(standalone_output_path))
             temp_folder = os.path.join(os.path.dirname(standalone_output_path), '.tmp')
-            os.makedirs(temp_folder)
+            
+            try:
+                os.makedirs(temp_folder)
+            except:
+                pass
 
             if data_output_path is None:
                 data = transformer.transform_data()

@@ -1,3 +1,9 @@
+# commands
+
+sudo python convert.py --caffemodel /home/user/PycharmProjects/PoseEstimation/pose/coco/pose_iter_440000.caffemodel /home/user/PycharmProjects/PoseEstimation/pose/coco/pose_deploy_linevec.prototxt --data-output-path PoseEstimationModel/outout.mat --code-output-path PoseEstimationModel/output2.py --standalone-output-path PoseEstimationModel/standalonehybrid.pb
+
+
+
 # Caffe to TensorFlow
 
 Convert [Caffe](https://github.com/BVLC/caffe/) models to [TensorFlow](https://github.com/tensorflow/tensorflow).
